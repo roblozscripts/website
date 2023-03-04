@@ -8,6 +8,7 @@
     font-family: sans-serif;
 }
 
+
 body {
     display: flex;
     justify-content: center;
@@ -18,6 +19,17 @@ body {
     background-position: center;
 }
 
+.main {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    top: -1000px;
+}
+
 .wrapper {
     position: relative;
     width: 600px;
@@ -26,8 +38,9 @@ body {
     border: 2px solid rgba(255, 255, 255, .5);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-
     overflow: hidden;
+    top: -30px;
+    left: 14%;
 }
 .wrapper::before
 {
@@ -115,7 +128,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: rgb(255, 0, 0);
+    background: rgb(21, 255, 0);
     left: 13px;
     top: 7px;
     border-radius: 50%;
@@ -201,4 +214,177 @@ body {
     left: 33%;
     color: white;
     box-shadow: 0 5px 25px rgb(0, 153, 255, 50);
+}
+
+.Status {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    left: 16%;
+    top: -130px;
+}
+.Status::before
+{
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -50%;
+    width: 580px;
+    height: 320px;
+    background: linear-gradient(0deg,transparent, #45ff45,#45ff45);
+    transform-origin: bottom right;
+    animation: movez 6s linear infinite;
+    animation-delay: -3s;
+}
+.Status::after
+{
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -50%;
+    width: 580px;
+    height: 320px;
+    background: linear-gradient(0deg,transparent, #45ff45,#45ff45);
+    transform-origin: bottom right;
+    animation: movezz 6s linear infinite;
+}
+@keyframes movezz
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.title2 h1 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 50px;
+    color:black;
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 160);
+    top: 35px;
+    left: 1px;
+}
+.title2 h1::before, .title2 h1::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(21, 255, 0);
+    left: 13px;
+    top: 8px;
+    border-radius: 50%;
+}
+.title2 h1::after{
+    animation: pulsez 1.3s infinite;
+}
+
+@keyframes pulsez{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+.title3 h1 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 50px;
+    color:black;
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 160);
+    top: 45px;
+    left: 1px;
+}
+.title3 h1::before, .title3 h1::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(21, 255, 0);
+    left: 13px;
+    top: 8px;
+    border-radius: 50%;
+}
+.title3 h1::after{
+    animation: pulsez 1.3s infinite;
+}
+
+@keyframes pulsez{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+@keyframes pulsez{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+.form1
+{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+}
+
+.website {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    left: -13%;
+    top: 90px;
+}
+.website h1 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 50px;
+    text-shadow: 0 5px 25px rgb(177, 0, 0, 30);
+    color:red;
+    top: 2px;
+    left: 110px;
+}
+.website h2 {
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 50px;
+    text-shadow: 0 5px 25px rgb(71, 177, 0, 30);
+    color:rgb(0, 255, 0);
+    top: 6px;
+    left: 5px;
 }
